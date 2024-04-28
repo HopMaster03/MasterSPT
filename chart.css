@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Following css is applicable to Student Dashboard as well as Teacher Dashboard */
+ 
+.banner_image{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(attendancebg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    }
+
+.form-box{
+    
+    position: static;
+    height: fit-content;
+    width: fit-content;
+    margin: 15% auto;
+    background:  #ffffff;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.button-box{
+    width: 220px;
+    margin:20px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #24baff1f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative
+
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #00d9ff,#0661ff);
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    padding: 10px 30px;
+}
+.input-groupss{
+    top: 90px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 55%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #00d9ff,#0661ff);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.chech-box{
+    margin: 30px 10px 30px 0;
+}
+ span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+h2{
+color: #0661ff;    
+}
+#login{
+    left:50px;
+}
+#register{
+    left:450px;
+}
+
+/* Style for dashboards */
+.leftpage {
+    border: 3px solid #b5b3b3;
+    
+    
+}
+.float-child-left{
+    width: 20%;
+    height:100%;
+
+    float: left;
+    padding: 20px;
+    
+   background-color: rgb(218, 134, 70);
+   
+}  
+
+/* LeaderBoard table style */
+.leaderboard {
+    .table-fill {
+        max-width: 800px;
+        padding:5px;
+        width: 100%;
+        
+        border-collapse: collapse;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        position: static;
+        top: -180px;
+      }
+      th {
+        color:#fff;;
+        background: #1b1e24;
+        
+        font-size:23px;
+        font-weight: 100;
+        padding: 5px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        vertical-align:middle;
+        text-align: center;
+      }
+      th:first-child {
+        border-top-left-radius:3px;
+        border-right:none;
+      }
+      
+      th:last-child {
+        border-top-right-radius:3px;
+      border-right:none;
+      }
+      td {
+        background:#FFFFFF;
+        padding:20px;
+        text-align: center;
+        vertical-align: middle;
+        font-weight:300;
+        font-size:18px;
+        border: 1px solid #C1C3D1;
+      }
+}
+
+/* Student Dashboard */
+/*Table Style*/
+
+/* CSS for subject and Marks table */
+#applytomarks{
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+
+
+    div.table-title {
+       display: block;
+      margin: auto;
+      max-width: 600px;
+      padding:5px;
+      width: 100%;
+    }
+    
+    .table-title h3 {
+       color: #fafafa;
+       font-size: 30px;
+       font-weight: 400;
+       font-style:normal;
+       font-family: "Roboto", helvetica, arial, sans-serif;
+       text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+       text-transform:uppercase;
+
+    }
+    
+    /* Student Dashboard */
+    /*** Table Styles **/
+    
+    .table-fill {
+      background: white;
+      
+      border-color: #1b1e24;
+      height: 320px;
+      margin: auto;
+      max-width: 600px;
+      padding:5px;
+      width: 100%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      animation: float 5s infinite;
+    
+    }
+     
+    th {
+      color:#D5DDE5;;
+      background:#1b1e24;
+      border-bottom:4px solid #9ea7af;
+      border-right: 1px solid #343a45;
+      font-size:23px;
+      font-weight: 100;
+      padding:24px;
+      text-align:left;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      vertical-align:middle;
+    }
+    
+    th:first-child {
+      border-top-left-radius:3px;
+    }
+     
+    th:last-child {
+      border-top-right-radius:3px;
+      border-right:none;
+    }
+      
+    tr {
+      border-top: 1px solid #C1C3D1;
+      border-bottom: 1px solid #C1C3D1;
+      color:#666B85;
+      font-size:16px;
+      font-weight:normal;
+      text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+    }
+     
+    tr:hover td {
+      background:#4E5066;
+      color:#FFFFFF;
+      border-top: 1px solid #22262e;
+    }
+     
+    tr:first-child {
+      border-top:none;
+    }
+    
+    tr:last-child {
+      border-bottom:none;
+    }
+     
+    tr:nth-child(odd) td {
+      background:#EBEBEB;
+    }
+     
+    tr:nth-child(odd):hover td {
+      background:#4E5066;
+    }
+    
+    tr:last-child td:first-child {
+      border-bottom-left-radius:3px;
+    }
+     
+    tr:last-child td:last-child {
+      border-bottom-right-radius:3px;
+    }
+     
+    td {
+      background:#FFFFFF;
+      padding:20px;
+      text-align:left;
+      vertical-align:middle;
+      font-weight:300;
+      font-size:18px;
+      text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+      border-right: 1px solid #C1C3D1;
+    }
+    
+    td:last-child {
+      border-right: 0px;
+    }
+    
+    th.text-left {
+      text-align: left;
+    }
+    
+    th.text-center {
+      text-align: center;
+    }
+    
+    th.text-right {
+      text-align: right;
+    }
+    
+    td.text-left {
+      text-align: left;
+    }
+    
+    td.text-center {
+      text-align: center;
+    }
+    
+    td.text-right {
+      text-align: right;
+    }
+}
+
+
+  
+/* Score Card styling*/
+.scorecard{
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    width: 100%;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    margin-top: 20px;
+    border-radius:15px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    background-color: #efefef;
+    
+}
+.scorecard div:first-child span{
+    color: var(--text-grey);
+    
+}
+.icon{
+    margin-bottom: 30px;
+    font-size: 60px;
+}
+.scorecard div:last-child span{
+    font-size: 3rem;
+    color: var(--main-color);
+    
+}
+
+
+
+   /* Main page styling */
+
+
+   .mainpage{
+    width: 60%;
+    height:100%;
+    background-color: #efefef;
+    float: left;
+    padding: 20px;
+    border-radius:15px;
+    display:flex;
+    flex-direction: column; 
+}
+/* Search bar styling */
+.search input[type=number] {
+    width: 300px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.search button {
+    background-color: #0074D9;
+    color: #f2f2f2;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+/* first graph styling */
+.firstgraph{
+    width: 100%; height: 325px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #d8d8d8;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+/* Dropdown menu styling */
+.selectoption1{
+    float: right;
+    
+    text-align: center;
+    align-self: center;
+    
+}
+.custom-select {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+}
+.custom-select select {
+    display: block;
+    width: 250px;
+    min-height: 35px;
+    background: #cbe7ff;
+    border-radius: 3px;
+    border: 2px solid #2196F3;
+    outline: none;
+    padding: 0 20px 0 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+  }
+  
+  .custom-select::after {
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #222;
+    display: inline-block;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+/* Second graph Styling */
+.secondgraph{
+    width:70%; height: 325px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #d8d8d8;
+}
+/* Right page styling */
+.rightpage{
+    width:20%;
+    height:100%;
+    float: right;
+    background-color: rgb(218, 134, 70);
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+/* profile section styling */
+.profileicon{
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    width: 150px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    margin-top: 20px;
+    border-radius:50%;
+    padding: 30px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center; 
+    flex-direction: column; 
+    background-color: #efefef;
+}
+
+.line{
+    border-bottom: 1px solid #888;
+}
+/* Student Dashboard-Student detail table styling */
+.container{
+    margin-top: 100px;
+    width: 304px;
+    height: fit-content;
+    background-color: rgb(218, 134, 70);
+    border-color: #4E5066;
+    
+    line-height: 40px;
+    font-size:larger;
+    
+    
+}
+.detailfont{
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Teacher dashboard- fail table styling */
+#applytofail{
+  .table-fill {
+    max-width: 800px;
+    padding:5px;
+    width: 100%;
+    
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: static;
+    top: -180px;
+  }
+  th {
+    color:#fff;;
+    background: #1b1e24;
+    
+    font-size:20px;
+    font-weight: 100;
+    padding: 5px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align:middle;
+    text-align: center;
+  }
+  th:first-child {
+    border-top-left-radius:3px;
+    border-right:none;
+  }
+  
+  th:last-child {
+    border-top-right-radius:3px;
+  border-right:none;
+  }
+  td {
+    background:#FFFFFF;
+    padding:20px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight:300;
+    font-size:18px;
+    border: 1px solid #C1C3D1;
+  }
+}
+table{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #efefef;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    font-size: large;
+       
+       font-style:normal;
+       font-family: "Roboto", helvetica, arial, sans-serif;
+}
+td{
+    padding-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+}
